@@ -1,5 +1,7 @@
 import {Router, RouterConfiguration} from 'aurelia-router';
+import {useView, inject} from 'aurelia-framework';
 
+@useView('app')
 export class App {
   router: Router;
   

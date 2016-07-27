@@ -11,7 +11,13 @@ namespace AureliaApp.Mvc
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
-            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+            //routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+
+            routes.MapRoute(
+                  name: "dist",
+                  url: "dist/{feature}/{name}",
+                  defaults: new { controller = "Template", action = "Render", name = UrlParameter.Optional }
+              );
 
             routes.MapRoute(
                 name: "Default",
