@@ -10,9 +10,9 @@ namespace AureliaApp.Mvc.Controllers
         public async Task<ActionResult> Render(string feature, string name)
         {
             if (!string.IsNullOrEmpty(name))
-                return PartialView(await Task.FromResult<string>($"~/src/{feature}/{name}.cshtml"));
+                return PartialView(await Task.FromResult<string>($"~/dist/{feature}/{name}.cshtml"));
             else
-                return PartialView(await Task.FromResult<string>($"~/src/{feature}.cshtml"));
+                return PartialView(await Task.FromResult<string>($"~/dist/{feature}.cshtml"));
         }
     }
 }
