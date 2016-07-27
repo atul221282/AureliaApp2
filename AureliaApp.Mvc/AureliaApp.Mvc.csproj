@@ -147,10 +147,10 @@
     <Content Include="scripts\jquery-1.10.2.min.js" />
     <Content Include="scripts\modernizr-2.6.2.js" />
     <Content Include="src\app.cshtml" />
-    <Content Include="src\child-router.html" />
-    <Content Include="src\nav-bar.html" />
-    <Content Include="src\users.html" />
-    <Content Include="src\welcome.html" />
+    <Content Include="src\child-router.cshtml" />
+    <Content Include="src\nav-bar.cshtml" />
+    <Content Include="src\users.cshtml" />
+    <Content Include="src\welcome.cshtml" />
     <Content Include="wallaby.js" />
     <Content Include="Web.config" />
     <Content Include="tsconfig.json" />
@@ -200,6 +200,7 @@
     <TypeScriptCompile Include="src\blur-image.ts" />
     <TypeScriptCompile Include="src\child-router.ts" />
     <TypeScriptCompile Include="src\main.ts" />
+    <TypeScriptCompile Include="src\nav-bar.ts" />
     <TypeScriptCompile Include="src\users.ts" />
     <TypeScriptCompile Include="src\welcome.ts" />
   </ItemGroup>

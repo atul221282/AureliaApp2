@@ -1,7 +1,9 @@
 import {autoinject} from 'aurelia-framework';
 import {HttpClient} from 'aurelia-fetch-client';
 import 'fetch';
+import {useView, inject} from 'aurelia-framework';
 
+@useView('users')
 @autoinject
 export class Users {
   heading = 'Github Users';

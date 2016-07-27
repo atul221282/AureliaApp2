@@ -1,5 +1,7 @@
 //import {computedFrom} from 'aurelia-framework';
+import {useView, inject} from 'aurelia-framework';
 
+@useView('welcome')
 export class Welcome {
   heading = 'Welcome to the Aurelia Navigation App!';
   firstName = 'John';
