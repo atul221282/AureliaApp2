@@ -18,22 +18,17 @@ namespace AureliaApp
         {
             //routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            
             routes.MapRoute(
                   name: "dist",
                   url: "dist/{feature}/{name}",
                   defaults: new { controller = "Template", action = "Render", name = UrlParameter.Optional }
               );
 
-
-            
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Index", action = "Index", id = UrlParameter.Optional }
             );
-
-           
 
         }
     }
