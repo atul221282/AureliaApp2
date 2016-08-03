@@ -192,6 +192,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="scripts\jquery-1.10.2.min.map" />
     <Content Include="src\web.config" />
+    <Content Include="src\post\vending-machine.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -212,6 +213,8 @@
     <TypeScriptCompile Include="src\child-router.ts" />
     <TypeScriptCompile Include="src\main.ts" />
     <TypeScriptCompile Include="src\nav-bar.ts" />
+    <TypeScriptCompile Include="src\post\quarter.ts" />
+    <TypeScriptCompile Include="src\post\vending-machine.ts" />
     <TypeScriptCompile Include="src\users.ts" />
     <TypeScriptCompile Include="src\welcome.ts" />
   </ItemGroup>
