@@ -6,7 +6,7 @@ namespace AureliaApp.Mvc.Controllers
     public class TemplateController : Controller
     {
         // GET: Template
-        [AllowAnonymous]
+        [AllowAnonymous, OutputCache(Duration = 30, VaryByParam = "feature;name")]
         public async Task<ActionResult> Render(string feature, string name)
         {
             if (!string.IsNullOrEmpty(name))
