@@ -1,0 +1,6 @@
+﻿<template>
+    <div repeat.for="item of _items">
+        ${item.model}
+        <compose view-model="${item.view}" model.bind="item.model" containerless></compose>
+    </div>
+</template>
