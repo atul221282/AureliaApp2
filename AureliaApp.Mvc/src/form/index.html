@@ -1,6 +1,7 @@
 ﻿<template>
+    <require from="form/my-element"></require>
     <div repeat.for="item of _items">
-        ${item.model}
-        <compose view-model="${item.view}" model.bind="item.model" containerless></compose>
+        ${item.view}-${item.model}
+        <compose view-model="${item.view}" model.two-way="item"></compose>
     </div>
 </template>

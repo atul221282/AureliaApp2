@@ -1,9 +1,10 @@
 ﻿import * as interfaces from '../interfaces';
+import {useView, bindable} from 'aurelia-framework';
 
 export class Address implements interfaces.IBaseEntity {
 
     public view: string = "form/address";
-    public model: string;
+    @bindable model: string;
     constructor() {
         console.log("address constructed - " + this.model);
     }

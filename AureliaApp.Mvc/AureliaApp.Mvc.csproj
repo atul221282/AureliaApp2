@@ -165,6 +165,8 @@
     <Content Include="src\child-router.cshtml" />
     <Content Include="src\form\address.html" />
     <Content Include="src\form\home-address.html" />
+    <Content Include="src\form\my-element.html" />
+    <Content Include="src\form\nested-element.html" />
     <Content Include="src\nav-bar.cshtml" />
     <Content Include="src\users.cshtml" />
     <Content Include="src\welcome.cshtml" />
@@ -217,6 +219,8 @@
     <TypeScriptCompile Include="src\form\address.ts" />
     <TypeScriptCompile Include="src\form\home-address.ts" />
     <TypeScriptCompile Include="src\form\index.ts" />
+    <TypeScriptCompile Include="src\form\my-element.ts" />
+    <TypeScriptCompile Include="src\form\nested-element.ts" />
     <TypeScriptCompile Include="src\interfaces.ts" />
     <TypeScriptCompile Include="src\main.ts" />
     <TypeScriptCompile Include="src\nav-bar.ts" />

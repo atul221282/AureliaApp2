@@ -7,7 +7,7 @@ import {HomeAddress} from '../form/home-address';
 export class Index {
 
     public _items: interfaces.IBaseEntity[];
-
+    
     constructor() {
         this._items = new Array<interfaces.IBaseEntity>();
         this._items.push(new Address());
