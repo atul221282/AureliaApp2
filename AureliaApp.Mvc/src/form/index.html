@@ -1,7 +1,8 @@
 ﻿<template>
     <require from="form/my-element"></require>
-    <div repeat.for="item of _items">
+    <!--<div repeat.for="item of _items">
         ${item.view}-${item.model}
         <compose view-model="${item.view}" model.two-way="item"></compose>
-    </div>
+    </div>-->
+    <my-element model.two-way="model" name.two-way="name"></my-element>
 </template>

@@ -5,18 +5,6 @@ import {HomeAddress} from '../form/home-address';
 
 
 export class Index {
-
-    public _items: interfaces.IBaseEntity[];
-    
-    constructor() {
-        this._items = new Array<interfaces.IBaseEntity>();
-        this._items.push(new Address());
-        this._items.push(new HomeAddress());
-    }
-
-    activate() {
-        this._items.forEach((entity, index, arr) => {
-            entity.init();
-        });
-    }
+    model: string = "How are you";
+    name: string = "Hi, Atul";
 }
