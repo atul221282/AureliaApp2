@@ -1,4 +1,10 @@
 ﻿<template>
-    <input type="text" value.two-way="childmodel" class="form-control" />
-    <input type="text" value.two-way="childname" class="form-control" />
+    <form submit.delegate="submit()">
+
+        <input type="text" value.two-way="childmodel & validate" class="form-control" />
+        <input type="text" value.two-way="childname & validate" class="form-control" />
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
 </template>

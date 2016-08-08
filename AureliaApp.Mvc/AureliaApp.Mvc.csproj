@@ -216,6 +216,7 @@
     <TypeScriptCompile Include="src\app.ts" />
     <TypeScriptCompile Include="src\blur-image.ts" />
     <TypeScriptCompile Include="src\child-router.ts" />
+    <TypeScriptCompile Include="src\custom\validatejs.d.ts" />
     <TypeScriptCompile Include="src\form\address.ts" />
     <TypeScriptCompile Include="src\form\home-address.ts" />
     <TypeScriptCompile Include="src\form\index.ts" />
