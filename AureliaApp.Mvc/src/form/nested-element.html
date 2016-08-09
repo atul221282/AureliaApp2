@@ -1,10 +1,19 @@
-﻿<template>
-    <form submit.delegate="submit()">
+﻿<!--https://gist.github.com/JeroenVinke/8ead16d0aa96a1c59b14eecbc59538fd-->
 
-        <input type="text" value.two-way="childmodel & validate" class="form-control" />
-        <input type="text" value.two-way="childname & validate" class="form-control" />
+<template>
+    <form submit.delegate="submit()"
+          validation-renderer="bootstrap-form">
+        <div class="form-group">
+            <label for="formGroupExampleInput">Child model</label>
+            <input type="text" value.two-way="childmodel & validate" class="form-control" />
+        </div>
 
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="form-group">
+            <label for="formGroupExampleInput">Child name</label>
+            <input type="text" value.two-way="childname & validate" class="form-control" />
+        </div>
+
+        <button type="submit" class="btn btn-primary" disabled.bind="!canSubmit">Submit</button>
 
     </form>
 </template>

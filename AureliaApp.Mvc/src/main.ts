@@ -1,4 +1,5 @@
 import 'bootstrap';
+
 import {Aurelia} from 'aurelia-framework';
 
 export function configure(aurelia: Aurelia) {
@@ -6,6 +7,7 @@ export function configure(aurelia: Aurelia) {
         .standardConfiguration()
         .plugin('aurelia-validation')
         .plugin('aurelia-validatejs')
+        .feature('bootstrap-validation')
         .developmentLogging();
 
     //Uncomment the line below to enable animation.

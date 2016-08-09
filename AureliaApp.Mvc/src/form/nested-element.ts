@@ -6,18 +6,12 @@ import {bindable} from 'aurelia-framework';
 export class NestedElement {
     @bindable childmodel: string;
     @bindable childname: string;
-    model: custom;
-    validation: any;
     static inject = [NewInstance.of(ValidationController), ValidationRules];
     constructor(public controller: ValidationController,
         public validatoinRules: ValidationRules) {
-        this.model = new custom();
     }
 
     attached() {
-        this.model.child = this.childmodel;
-        this.model.name = this.childname;
-
         this.validatoinRules
             .ensure("childmodel").required()
             .ensure("childname").required()
@@ -25,12 +19,12 @@ export class NestedElement {
 
     }
 
+    get canSubmit() {
+        return this.controller.validate().length <= 0;
+    }
+
     submit() {
         let errors = this.controller.validate();
-    }
-}
 
-export class custom {
-    public child: string;
-    public name: string;
+    }
 }

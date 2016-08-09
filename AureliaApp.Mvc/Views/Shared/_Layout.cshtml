@@ -3,14 +3,15 @@
 <head>
     <link rel="stylesheet" href="jspm_packages/npm/font-awesome@4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/styles.css">
-    
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
 
 </head>
 <body>
-
+    <h2>A</h2>
     @RenderBody()
 
     <script src="jspm_packages/npm/bluebird@3.4.1/js/browser/bluebird.min.js"></script>
@@ -19,5 +20,8 @@
     <script>
         System.import('aurelia-bootstrapper');
     </script>
+    <script src="~/scripts/jquery-3.0.0.js"></script>
+    <script src="~/scripts/bootstrap.js"></script>
+
 </body>
 </html>

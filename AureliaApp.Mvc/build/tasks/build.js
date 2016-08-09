@@ -21,8 +21,8 @@ gulp.task('build-system', function() {
       "typescript": require('typescript')
     });
   }
-  return gulp.src(paths.dtsSrc.concat(paths.source))
-    .pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
+  return gulp.src(paths.dtsSrc.concat([paths.source]))
+    //.pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
     .pipe(changed(paths.output, {extension: '.ts'}))
     .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(typescript(typescriptCompiler))

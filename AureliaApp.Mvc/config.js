@@ -30,11 +30,12 @@ System.config({
     "aurelia-validatejs": "npm:aurelia-validatejs@0.7.0",
     "aurelia-validation": "npm:aurelia-validation@0.11.0",
     "bluebird": "npm:bluebird@3.4.1",
-    "bootstrap": "github:twbs/bootstrap@3.3.6",
+    "bootstrap": "github:twbs/bootstrap@3.3.7",
     "fetch": "github:github/fetch@1.0.0",
     "font-awesome": "npm:font-awesome@4.6.3",
     "jquery": "npm:jquery@2.2.4",
     "text": "github:systemjs/plugin-text@0.0.8",
+    "twbs/bootstrap": "github:twbs/bootstrap@4.0.0-alpha",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
     },
@@ -50,8 +51,11 @@ System.config({
     "github:jspm/nodelibs-vm@0.1.0": {
       "vm-browserify": "npm:vm-browserify@0.0.4"
     },
-    "github:twbs/bootstrap@3.3.6": {
+    "github:twbs/bootstrap@3.3.7": {
       "jquery": "npm:jquery@2.2.4"
+    },
+    "github:twbs/bootstrap@4.0.0-alpha": {
+      "jquery": "github:components/jquery@3.1.0"
     },
     "npm:assert@1.4.1": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",
