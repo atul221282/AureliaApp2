@@ -243,8 +243,11 @@
     <Content Include="scripts\jquery-3.0.0.slim.js" />
     <Content Include="scripts\jquery-3.0.0.slim.min.js" />
     <Content Include="scripts\modernizr-2.6.2.js" />
+    <Content Include="src\account\login.html" />
     <Content Include="src\app.cshtml" />
     <Content Include="src\child-router.cshtml" />
+    <Content Include="src\component\name-element.html" />
+    <Content Include="src\component\user-element.html" />
     <Content Include="src\form\address.html" />
     <Content Include="src\form\home-address.html" />
     <Content Include="src\form\my-element.html" />
@@ -296,9 +299,14 @@
     <Folder Include="Views\Template\" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="src\account\login.ts" />
     <TypeScriptCompile Include="src\app.ts" />
     <TypeScriptCompile Include="src\blur-image.ts" />
+    <TypeScriptCompile Include="src\bootstrap-validation\bootstrap-form-validation-renderer.ts" />
+    <TypeScriptCompile Include="src\bootstrap-validation\index.ts" />
     <TypeScriptCompile Include="src\child-router.ts" />
+    <TypeScriptCompile Include="src\component\name-element.ts" />
+    <TypeScriptCompile Include="src\component\user-element.ts" />
     <TypeScriptCompile Include="src\custom\validatejs.d.ts" />
     <TypeScriptCompile Include="src\form\address.ts" />
     <TypeScriptCompile Include="src\form\home-address.ts" />
@@ -307,6 +315,7 @@
     <TypeScriptCompile Include="src\form\nested-element.ts" />
     <TypeScriptCompile Include="src\interfaces.ts" />
     <TypeScriptCompile Include="src\main.ts" />
+    <TypeScriptCompile Include="src\model\user.ts" />
     <TypeScriptCompile Include="src\nav-bar.ts" />
     <TypeScriptCompile Include="src\post\quarter.ts" />
     <TypeScriptCompile Include="src\post\vending-machine.ts" />
